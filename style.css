@@ -1,0 +1,34 @@
+body {
+  margin-bottom: 120px;
+}
+h1 {
+  border-bottom: 1px solid black;
+}
+section + section {
+  border-top: 1px solid fuchsia;
+}
+
+/* 文字の書き換え */
+
+/* ボタンを押したら文字の変更 */
+
+/* クラスの追加 */
+.addclass {
+  border: 0.7px solid grey;
+  margin: 12px 0;
+}
+
+/* 複数要素の取得、特定の要素、要素の削除 */
+
+/* スタイルの変更 */
+.red-style {
+  color: red;
+  font-weight: bold;
+  font-size: 24px;
+}
+/* メゾットの連結（メゾットチェーン） */
+.blue-style {
+  color: blue;
+  font-weight: bold;
+  font-size: 24px;
+}
