@@ -32,3 +32,7 @@ section + section {
   font-weight: bold;
   font-size: 24px;
 }
+/* 新しい要素の取得 */
+.list1 li:nth-child(even) {
+  color: yellow;
+}
