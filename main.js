@@ -45,16 +45,25 @@ $(() => {
 
 // リスト作成
 $(() => {
+  const $input = $("input");
+  $input.focus();
+
   $(".listAdd").click(() => {
     $("<li>")
     // input要素の取得と入力された値の取得
-      .text($("input").val())
+      .text($input.val())
       .appendTo("ul");
-    $("input")
+    $input
       // これでボタンの後空になる
       .val("")
       // フォーカスが当たる
       .focus();
+  });
 
+  $("ul").click(e => {
+    if (e.target.nodeName != "LI" || !confirm("Are you sure?")) {
+      return;
+    }
+    e.target.remove();
   });
 });

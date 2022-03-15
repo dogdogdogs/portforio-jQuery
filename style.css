@@ -36,3 +36,13 @@ section + section {
 .list1 li:nth-child(even) {
   color: yellow;
 }
+/* リスト作成 */
+li {
+  cursor: pointer;
+}
+li:hover::after {
+  content: "[x]";
+  font-size: 14px;
+  color: #aaa;
+  margin-left: 4px;
+}
